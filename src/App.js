@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import{Switch,Route} from 'react-router-dom';
-import logo from './shop-logo.png';
+import logo from './logo.png';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
+import About from './components/About';
+import Contact from './components/Contact';
 import ProductList from './components/ProductList';
 import Details from './components/Details';
 import Cart from './components/Cart';
@@ -18,6 +20,8 @@ class App extends Component {
             <Route exact path="/" component = {ProductList} />            
              <Route path="/details" component = {Details} />    
              <Route path ="/cart" component ={Cart} />
+             <Route path ="/about" component ={About}/>
+             <Route path ="/contact" component ={Contact}/>
              <Route component ={Default} />
             </Switch>
        </React.Fragment>
