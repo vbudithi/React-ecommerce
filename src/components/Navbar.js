@@ -6,8 +6,7 @@ import styled from 'styled-components';
 export default class Navbar extends Component {
     render() {
         return (
-
-          <nav className ="navbar navbar-expand-lg navbar-light bg-light px-sm-5 shadow p-2 mb-5 rounded fixed-top"  >
+          <nav className ="navbar navbar-expand-lg bg-light px-sm-5 shadow p-1 mb-6">
                { /* 
                     https://www.iconfinder.com/icons/1243689/call_phone_icon
                     Creative Commons (Attribution 3.0 Unported);
@@ -20,28 +19,25 @@ export default class Navbar extends Component {
                           <Link to ="/" className="nav-link">
                               <Button primary>
                                    <i className="fa fa-product" />
-                                    Products
-                              </Button>
-                             
+                                   PRODUCTS
+                              </Button>                   
                           </Link>
-                      </li>                    
-                  </ul>                
-                  <ul className="navbar-nav align-items-center">
+                      </li>       
                       <li className="nav-item ml-5">
                           <Link to ="/about" className="nav-link">
-                              <Button>                          
-                                    ABOUT
+                              <Button>                            
+                                  ABOUT
                               </Button>
                           </Link>
-                      </li>
-                                
+                      </li>        
                       <li className="nav-item ml-5">
                           <Link to ="/contact" className="nav-link">
                               <Button>                            
                                   CONTACT
                               </Button>
                           </Link>
-                      </li>              
+                      </li>        
+
                   </ul>
                   <Link to ='/cart' className="ml-auto">
                     <ButtonContainer>
@@ -57,7 +53,6 @@ export default class Navbar extends Component {
 }
 
 const ButtonContainer = styled.button`
-
   font-size: 1.4 rem;
   background: transparent;
   border: 0.05rem solid var(--mainDark);

@@ -16,11 +16,36 @@ body{
    letter-spacing: 0.3rem;
    text-transform: uppercase;
 }
-
+.nav-bar{
+   font-family: 'Luckiest Guy', cursive;
+}
 .text-blue{
   color: var(--mainBlue);
+  padding:0.4rem 0.5rem;
+  border-radius:0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
-.text-bright{
-   color: var(--lightBlue);
-}
+h2 {
+   font-size: 3rem;
+   display: inline-block;
+ }
+ 
+ .title {
+   color: var(--mainBlue);
+   padding:0.4rem 0.5rem;
+   position: relative;
+   z-index: 10;
+   font-family: 'Alike', serif;
+   text-shadow: 1px 2px 35px var(--mainDark);
+ }
+ 
+ .title:after {
+   content: '';
+   border-bottom: 2px solid var(--mainDark);
+   display: block;
+   position: absolute;
+   left: 21.5rem;
+   bottom: 3px;
+   right: 21.5rem;
+   z-index: -1;
+ }
