@@ -11,8 +11,13 @@ export default class Product extends Component {
           
             <ProductWrapper className ="col-9 mx-auto col-md-6 col-lg-3 my-3">
                <div className="card">
-                   <div className="img-container p-5" onClick = {() => console.log('you clicked me')
-                   }>
+                   <ProductConsumer>   
+                       {(value) => ( 
+                       <div className="img-container p-5"
+                        onClick = {() =>
+                              value.handleDetail(id)
+                        }
+                        >
                    <Link to ='/details'>
                        <img src={img} alt="product" className="card-img-top"/>
                    </Link>
@@ -20,7 +25,7 @@ export default class Product extends Component {
                     className ="cart-btn"
                     disabled = {inCart ? true :false}
                     onClick={() => {
-                            console.log('added to the cart');
+                            value.addToCart(id);
                     }}
                     >
                     {inCart ? (
@@ -31,7 +36,10 @@ export default class Product extends Component {
                              <i className="fas fa-cart-plus"/>
                              )}
                     </button>
-                   </div>
+                   </div>)}           
+                  
+                   </ProductConsumer>
+                   
                    {/*Card Footer*/}
                     <div className="card-footer d-flex justify-content-between">
                         <p className="align-self-center mb-0">
@@ -60,8 +68,7 @@ Product.propTypes = {
 
 const ProductWrapper =  styled.div `
 
-.card{
-    border-color: transparent;
+.card{ 
     transition: all 0.1s linear;
     transform: translateY(translateY);
 }
@@ -73,11 +80,11 @@ const ProductWrapper =  styled.div `
 }
 &:hover{
     .card{
-         border:0.04rem solid(0,0,0,0.2);
-         box-shadow:2px 2px 5px 0px rgba(0,0,0,0.2)
+         border: 0.04rem solid(0,0,0,0.2);
+         box-shadow:2px 2px 5px 1px rgba(0,0,0,0.2)
     }
     .card-footer{
-         background:rgba(247,247,247);
+         background:rgba(238,238,238);
     }
 }
 
@@ -90,7 +97,7 @@ const ProductWrapper =  styled.div `
     overflow:hidden;
 }
 .img-container:hover .card-img-top{
-    transform : scale(1.2);
+    transform : scale(1.4);
 }
 
 .cart-btn{
@@ -101,9 +108,9 @@ const ProductWrapper =  styled.div `
     background: var(--mainGrey);
     border:none;
     font-size:1.2rem;
-    border-radius:0.5rem 0 0 0.5rem;
-    transform: translate(-100%, 100%);
+    border-radius:0 0 0 0;
     transition: all 0.5s linear; 
+    transform: translate(-100%, 100%);
 }
 
 .img-container:hover .cart-btn{

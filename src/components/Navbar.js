@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Link, Switch} from 'react-router-dom';
 import logo from '../logo.png';
-import styled from 'styled-components';
+import { ButtonContainer , Button } from './Button';
 
 export default class Navbar extends Component {
     render() {
@@ -52,25 +52,3 @@ export default class Navbar extends Component {
     }
 }
 
-const ButtonContainer = styled.button`
-  font-size: 1.4 rem;
-  background: transparent;
-  border: 0.05rem solid var(--mainDark);
-  padding:0.5rem 0.7rem;
-  border-radius: 0.36rem;
-  margin:0.2rem 0.5rem 0.2rem 0;
-  transition:all 0.3s ease-in-out;
-  &:hover {
-    background: var(--mainGrey);
-  }
-  `;
-
-  const Button = styled.button`
-  background: ${props => props.primary ? "palevioletred" : "white"};
-  color: ${props => props.primary ? "white" : "palevioletred"};
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25rem 1rem;
-  border: 2px solid palevioletred;
-  border-radius: 3px;
-`;
