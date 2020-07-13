@@ -1,6 +1,7 @@
-import React from "react";
+import React, {Component} from "react";
 import ReactMapGL, { Marker, Popup, NavigationControl } from "react-map-gl";
 import styled from "styled-components";
+import UserForm from './UserForm'
 
 const TOKEN =
   "pk.eyJ1IjoiaHVjaGVuc2NiIiwiYSI6ImNqdHpnbGZ5ejFneXEzeW81a3B3anJkZGoifQ.RjMCIQBbS0dlzTl85EogQw";
@@ -31,7 +32,7 @@ const center = {
     2,
 };
 
-export default class Map extends React.Component {
+class Map extends Component {
   state = {
     viewport: {
       latitude: center.latitude,
@@ -96,6 +97,18 @@ export default class Map extends React.Component {
     );
   }
 }
+
+class Form extends Component {
+  render() {
+    return (
+      <div>
+         <UserForm />
+       </div>
+    );
+  };
+}
+export{Map, Form};
+
 
 const CitiMarker = styled.div`
   background-color: ${props => props.color};

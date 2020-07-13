@@ -3,14 +3,18 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { ProductConsumer } from '../context';
 import PropTypes from 'prop-types';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default class Product extends Component {
     render() {
         const{ id, title, img, price, inCart} =this.props.product;
+
+        Aos.init({duration:1000});
         return (
           
             <ProductWrapper className ="col-9 mx-auto col-md-6 col-lg-3 my-3">
-               <div className="card">
+               <div data-aos="flip-left" className="card">
                    <ProductConsumer>   
                        {(value) => ( 
                        <div className="img-container p-5"
@@ -81,7 +85,7 @@ const ProductWrapper =  styled.div `
 &:hover{
     .card{
          border: 0.04rem solid(0,0,0,0.2);
-         box-shadow:2px 2px 5px 1px rgba(0,0,0,0.2)
+         box-shadow:2px 12px 18px -6px rgba(0,0,0,0.3);
     }
     .card-footer{
          background:rgba(238,238,238);

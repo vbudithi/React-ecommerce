@@ -5,7 +5,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import About from './components/About';
-import Contact from './components/Contact';
+import Contact from './components/contactus/Contact';
 import ProductList from './components/ProductList';
 import Details from './components/Details';
 import Cart from './components/Cart';
