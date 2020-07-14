@@ -7,8 +7,9 @@ export default function Title({name, title}) {
                 <div className="col-10 mx-auto my-2 text-center text-tiltle">
                   <h1 className ="font-weight-bold">
                     <div className="title">
-                    {name} {title} 
-                     </div>          
+                    {name} {title}        
+                     </div>     
+                     <hr />     
                   </h1>
                 </div>
             </div>

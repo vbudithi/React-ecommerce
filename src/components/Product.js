@@ -14,7 +14,7 @@ export default class Product extends Component {
         return (
           
             <ProductWrapper className ="col-9 mx-auto col-md-6 col-lg-3 my-3">
-               <div data-aos="flip-left" className="card">
+               <div data-aos="fade-right" data-aos-once="true" className="card">
                    <ProductConsumer>   
                        {(value) => ( 
                        <div className="img-container p-5"
@@ -114,7 +114,7 @@ const ProductWrapper =  styled.div `
     font-size:1.2rem;
     border-radius:0 0 0 0;
     transition: all 0.5s linear; 
-    transform: translate(-100%, 100%);
+    
 }
 
 .img-container:hover .cart-btn{

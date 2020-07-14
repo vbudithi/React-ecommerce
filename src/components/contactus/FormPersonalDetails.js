@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import styled from 'styled-components';
 
 export default class FormPersonalDetails extends Component {
     continue = e => {
@@ -47,8 +46,8 @@ export default class FormPersonalDetails extends Component {
                                 defaultValue ={values.phone}
                                 />
                                 </div>
-                        </div>
                             </div>
+                        </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group text-center">
@@ -78,6 +77,7 @@ export default class FormPersonalDetails extends Component {
                             >Back
                             </button>
                         </form>
+                        <br />
                 </div>
 
             </div>

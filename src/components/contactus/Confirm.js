@@ -18,6 +18,8 @@ export default class FormUserDetails extends Component {
             <div>      
               <div class="container">
                <br />
+               <br />
+               <ul class="list-group">
                 <a
                 href="#"
                  class="list-group-item list-group-item-action text-center" 
@@ -26,9 +28,7 @@ export default class FormUserDetails extends Component {
                    First Name: 
                    <br />
                    {firstName}
-
-                </a>
-                 <ul class="list-group">
+                </a>       
                 <a 
                  href="#"
                  class="list-group-item list-group-item-action text-center" 
@@ -38,7 +38,7 @@ export default class FormUserDetails extends Component {
                     Second Name:
                     <br />
                     {lastName}
-                </a>
+                </a>     
                 <a 
                  href="#"
                  class="list-group-item list-group-item-action text-center" 
@@ -81,6 +81,7 @@ export default class FormUserDetails extends Component {
                 </a>
                </ul>                
                <br />
+
                <button
                   type="confirm" 
                   class="btn btn-primary"
@@ -95,7 +96,8 @@ export default class FormUserDetails extends Component {
                 onClick={this.back}
                 >Back
                 </button>      
-                <br />       
+                <br />    
+                <br />   
             </div>
          </div>
          </React.Fragment>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Product from './Product';
 import Title from './Title';
 import {ProductConsumer} from '../context';
+import Footer from'./Footer'
 
 export default class ProductList extends Component {
     render() {
@@ -13,7 +14,7 @@ export default class ProductList extends Component {
                         <br />
                       <div className="row">
                         <ProductConsumer>
-                            {value=>{
+                            {value=> {
                                 return value.products.map( product => {
                                     return <Product key={product.id} product={product} />;
                                 })
@@ -21,7 +22,8 @@ export default class ProductList extends Component {
                         </ProductConsumer>
                       </div>
                     </div>
-                </div>   
+                </div>  
+                <Footer /> 
             </React.Fragment>      
         );
     }
