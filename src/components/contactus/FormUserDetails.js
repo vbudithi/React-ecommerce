@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components';
+import Title from '../Title';
 
 export default class FormUserDetails extends Component {
     continue = e => {
@@ -14,9 +15,8 @@ export default class FormUserDetails extends Component {
               <div class="container ">
                 <form>
                   < br/>
-                  <h2 >CONTACT US</h2>        
+                  <Title name = "Contact" title="Form" />  
                   <br />
-                 
                   <br />
                   <div class="row ">
                     <div class="col-md-6">
@@ -47,8 +47,7 @@ export default class FormUserDetails extends Component {
                         />
                       </div>
                     </div>    
-                  </div>
-                  
+                  </div>               
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group text-center">

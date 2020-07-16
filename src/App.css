@@ -55,9 +55,8 @@ h2 {
 
  /*About section */
  .about{
-	cursor: pointer;
-	background-color: #E0E0E0;
-	color: #;
+	background-color: var(--mainClear);
+	color: var(--mainDark);
 	padding-top: 20px;
 	padding-bottom: 30px;
 }
@@ -76,7 +75,7 @@ h2 {
 	margin:auto;
 	border-radius:50%;  
 	font-size: 40px;
-	color: #FFFFFF;
+	color: var(--mainClear);
 	opacity: 0.7;
 	background-color: #555251;
 	border: 2px solid #555251;

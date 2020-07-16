@@ -8,8 +8,9 @@ import Contact from './components/contactus/Contact';
 import Footer from './components/Footer';
 import ProductList from './components/ProductList';
 import Details from './components/Details';
-import Cart from './components/Cart';
+import Cart from './components/cart';
 import Default from './components/Default';
+import Modal from './components/Modal';
 
 class App extends Component {
   render() {
@@ -25,6 +26,7 @@ class App extends Component {
              <Route path="/Footer" component ={Footer}/>
              <Route component ={Default} />
             </Switch>
+            <Modal />
        </React.Fragment>
     );
    }

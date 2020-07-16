@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 import Footer from './Footer'
-import '../App.css'
+import Title from './Title';
 
 export default class About extends Component {
 
     render() {
         return (
-            <div>
+            <React.Fragment>
                  <section class="text-center about">
-                    <h1 class>ABOUT US</h1>
+                      <Title name = "About" title="Us" />
+                    <br />
                      <div class="container">
                         <div class="row">
                           <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200" >
@@ -112,7 +113,7 @@ export default class About extends Component {
                     </div>
                     </section>
                  <Footer />
-            </div>          
+            </React.Fragment>         
         )
     }
 }
