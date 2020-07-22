@@ -10,6 +10,6 @@ export default class EmptyCart extends Component {
                 </div>
                </div>  
             </div>
-        );
+        )
     }
 }

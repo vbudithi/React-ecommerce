@@ -7,10 +7,10 @@ export default class About extends Component {
     render() {
         return (
             <React.Fragment>
-                 <section class="text-center about">
-                      <Title name = "About" title="Us" />
+                 <section class="text-center about">                 
                     <br />
                      <div class="container">
+                       <Title name = "About" title="Us" />
                         <div class="row">
                           <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200" >
                             <span class="fa fa-phone"></span>
