@@ -28,11 +28,15 @@ export const ButtonContainer = styled.button`
   `;
 
   export const Button = styled.button`
-  background: ${props => props.primary ? "palevioletred" : "white"};
-  color: ${props => props.primary ? "white" : "palevioletred"};
+  background: ${props => props.primary ? "var(--mainPink)" : "var(--mainClear)"};
+  color: ${props => props.primary ? "var(--mainClear)" : "var(--mainPink)"};
   font-size: 1em;
   margin: 1em;
   padding: 0.25rem 1rem;
-  border: 2px solid palevioletred;
+  border: 2px solid var(--mainPink);
+  &:focus{
+    outline: none;
+    border-color: var(--mainBrown);
+  }
   border-radius: 3px;
 `;

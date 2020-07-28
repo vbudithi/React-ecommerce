@@ -16,9 +16,13 @@ export default class FormUserDetails extends Component {
                   < br/>
                   <Title name = "Contact" title="Form" />  
                   <br />
-                  <br />
+                
                   <div className="row">
-                    <div className="col-md-6 mx-auto form-group text-center ">
+                    <div className="col-md-6 mx-auto form-group text-center">
+                    
+                    <i className="fa fa-arrow-right" />
+                    <br />
+                    <br />
                         <label for="first">First Name</label>
                         <input
                           type="text"
@@ -35,7 +39,7 @@ export default class FormUserDetails extends Component {
                         <label for="last">Last Name</label>
                         <input
                         type="text" 
-                        class="form-control" 
+                        className="form-control" 
                         placeholder="last name" 
                         id="last"
                         onChange= {handleChange('lastName')} 
@@ -48,7 +52,7 @@ export default class FormUserDetails extends Component {
                         <label for="email">Email address</label>
                         <input
                         type="email" 
-                        class="form-control" 
+                        className="form-control" 
                         id="email" 
                         placeholder="email" 
                         onChange={handleChange('email')} 
@@ -61,7 +65,7 @@ export default class FormUserDetails extends Component {
                     <div className="col-md-6 mx-auto form-group text-center"> 
                       <button
                       type="submit" 
-                      class="btn btn-primary"
+                      className="btn btn-primary"
                       onClick={this.continue}
                       >Continue
                       </button>

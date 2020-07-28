@@ -19,7 +19,10 @@ export default class FormUserDetails extends Component {
               <div class="container">
                <br />
                <br />
-               <ul class="list-group">
+               <br />
+               <ul class="list-group mx-auto text-center">
+               <i className="fa fa-arrow-left" />
+               <br />
                 <a
                 href="#"
                  class="list-group-item list-group-item-action text-center" 
@@ -81,23 +84,22 @@ export default class FormUserDetails extends Component {
                 </a>
                </ul>                
                <br />
-
+               <br />
+               <div className="col-md-6 mx-auto form-group text-center">   
+               <button
+                type="button" 
+                class="btn btn-secondary"
+                onClick={this.back}
+                >Back
+                </button>                 
+                &emsp;
                <button
                   type="confirm" 
                   class="btn btn-primary"
                   onClick={this.continue}
                   >Confirm & Continue
                 </button>
-                
-                &emsp;
-                <button
-                type="button" 
-                class="btn btn-secondary"
-                onClick={this.back}
-                >Back
-                </button>      
-                <br />    
-                <br />   
+                </div>  
             </div>
          </div>
          </React.Fragment>

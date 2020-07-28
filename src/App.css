@@ -7,6 +7,7 @@
    --mainClear: #FFFFFF;
    --lightGrey : #E0E0E0;
    --mainBrown: #555251;
+   --mainPink:palevioletred;
 }
 
 body{
@@ -23,6 +24,7 @@ body{
 .nav-bar{
    font-family: 'Luckiest Guy', cursive;
 }
+
 .text-blue{
   color: var(--mainBlue);
   padding:0.4rem 0.5rem;
@@ -152,6 +154,14 @@ h2 {
     color:green;
   }
   
+  .fa-arrow-right{
+     font-size:2rem;
+  }
+
+  .fa-arrow-left{
+    font-size:2rem;
+  }
+
   .fa-bolt {
      color: var(--mainBlue);
      font-size:8rem;
@@ -171,9 +181,27 @@ h2 {
     -moz-transform: scale(1.1,1.1) rotate(360deg) ;
     -o-transform: scale(1.1,1.1) rotate(360deg) ;
     transform: scale(1.1,1.1) rotate(360deg) ;
-    
    }
   
+   .fa-wrench{
+     font-size: 7rem;
+     opacity: 1;	
+     padding-bottom:50px;
+     transition: all 0.1s linear;
+     opacity: 0.7;
+     webkit-transition:all .5s ease;
+     moz-transition:all .5s ease;
+     os-transition:all .5s ease;
+     transition:all .5s ease;
+   }
+
+     .fa-wrench:hover{
+      transform : scale(1.1);
+      -webkit-transform: scale(1.1,1.1) rotate(360deg) ;
+      -moz-transform: scale(1.1,1.1) rotate(360deg) ;
+      -o-transform: scale(1.1,1.1) rotate(360deg) ;
+      transform: scale(1.1,1.1) rotate(360deg) ;
+     }
   .btn-black{
      background: transparent;
      text-transform: capitalize;
@@ -225,3 +253,5 @@ h2 {
     background-color : #e6f2ff;
     padding: 15px 45px 45px 55px
   }
+
+

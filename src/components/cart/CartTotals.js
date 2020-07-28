@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import { Button } from '../Button';
+import PayPalButton from './PayPalButton';
 
-export default class CartTotals extends Component {
-    render() {
-        const { value } =this.props;
+export default function CartTotals({ value, history }) {
         const { cartSubTotal, cartTax, cartTotal, clearCart } = value;
+
         return (
                <React.Fragment>
                    <div className="container">
@@ -38,6 +38,11 @@ export default class CartTotals extends Component {
                                                {cartTotal}
                                              </strong>    
                                  </h4>
+                                 <PayPalButton
+                                    total={cartTotal} 
+                                    clearCart= {clearCart} 
+                                    history ={history} 
+                                 />
                             </div>
                             <br />
                             <div className="btn-outline col-10 mt-2 ml-sm-5 ml-md-auto col-sm-6 text-capitalize text-center">     
@@ -69,5 +74,5 @@ export default class CartTotals extends Component {
                        </div>
             </React.Fragment>
         );
-    }
+    
 }

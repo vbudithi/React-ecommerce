@@ -61,6 +61,6 @@ const ModalContainer = styled.div`
  align-items:center;
  justify-content:center;
  #modal {
-     background:var(--mainWhite);
+     background:var(--mainClear);
  }
 `;
