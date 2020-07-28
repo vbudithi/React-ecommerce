@@ -9,10 +9,8 @@ import "aos/dist/aos.css";
 export default class Product extends Component {
     render() {
         const{ id, title, img, price, inCart} =this.props.product;
-        Aos.init({duration:1000});
-        
-        return (
-          
+        Aos.init({duration:1000});   
+        return (  
             <ProductWrapper className ="col-9 mx-auto col-md-6 col-lg-3 my-3">
                <div data-aos="fade-right" data-aos-once="true" className="card">
                    <ProductConsumer>   
@@ -41,18 +39,18 @@ export default class Product extends Component {
                                     <i className="fas fa-cart-plus"/>
                                     )}
                             </button>
-                        </div>)}           
-                        
-                        </ProductConsumer>
-                        
+                        </div>)}                              
+                        </ProductConsumer>        
                         {/*Card Footer*/}
                             <div className="card-footer d-flex justify-content-between">
                                 <p className="align-self-center mb-0">
                                     {title}
                                 </p>
-                                <h5 className="text-blue font-italic mb-0">
-                                <span className="mr-1">$</span>
-                                {price}
+                                <h5 className="text-black font-italic mb-0">                        
+                                <i class="fas fa-dollar-sign" /> 
+                                <strong>
+                                 {price}     
+                                </strong>
                                 </h5>
                             </div>
                     </div>  
@@ -74,7 +72,7 @@ Product.propTypes = {
 const ProductWrapper =  styled.div `
 
 .card{ 
-    transition: all 0.1s linear;
+    transition: all 1s linear;
     transform: translateY(translateY);
 }
 
@@ -114,13 +112,11 @@ const ProductWrapper =  styled.div `
     border:none;
     font-size:1.2rem;
     border-radius:0 0 0 0;
-    transition: all 0.5s linear; 
-    
+    transition: all 0.5s linear;   
 }
 
 .img-container:hover .cart-btn{
-    transform: translate(0, 0);
-    
+    transform: translate(0, 0);   
 }
 
 .cart-btn:hover {

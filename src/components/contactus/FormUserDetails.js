@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import styled from 'styled-components';
 import Title from '../Title';
 
 export default class FormUserDetails extends Component {
@@ -12,15 +11,14 @@ export default class FormUserDetails extends Component {
         return (
             <React.Fragment>
             <div>      
-              <div class="container ">
+              <div className="container ">
                 <form>
                   < br/>
                   <Title name = "Contact" title="Form" />  
                   <br />
                   <br />
-                  <div class="row ">
-                    <div class="col-md-6">
-                      <div class="form-group text-center ">
+                  <div className="row">
+                    <div className="col-md-6 mx-auto form-group text-center ">
                         <label for="first">First Name</label>
                         <input
                           type="text"
@@ -30,12 +28,10 @@ export default class FormUserDetails extends Component {
                           onChange= {handleChange('firstName')} 
                           defaultValue={values.firstName}
                         />
-                      </div>
                     </div>
                   </div>   
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group text-center">
+                  <div className="row">
+                    <div className="col-md-6 mx-auto form-group text-center">
                         <label for="last">Last Name</label>
                         <input
                         type="text" 
@@ -45,12 +41,10 @@ export default class FormUserDetails extends Component {
                         onChange= {handleChange('lastName')} 
                         defaultValue ={values.lastName}
                         />
-                      </div>
-                    </div>    
+                    </div>   
                   </div>               
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group text-center">
+                  <div className="row">
+                    <div className="col-md-6 mx-auto form-group text-center">
                         <label for="email">Email address</label>
                         <input
                         type="email" 
@@ -60,18 +54,21 @@ export default class FormUserDetails extends Component {
                         onChange={handleChange('email')} 
                         defaultValue={values.email}
                         />
-                      </div>
                     </div>
+                  </div>
+                  <br />
+                  <div className="row">
+                    <div className="col-md-6 mx-auto form-group text-center"> 
+                      <button
+                      type="submit" 
+                      class="btn btn-primary"
+                      onClick={this.continue}
+                      >Continue
+                      </button>
                     </div>
-                    <br />
-                  <button
-                  type="submit" 
-                  class="btn btn-primary"
-                  onClick={this.continue}
-                  >Continue</button>
+                  </div>
                 </form>
               </div>
-
          </div>
          </React.Fragment>
           

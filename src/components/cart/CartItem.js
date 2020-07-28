@@ -6,8 +6,11 @@ export default class CartItem extends Component {
     const { increment, decrement, removeItem } = this.props.value;
 
     return (
-       <div className="row my-4 text-capitalize text-center">
-           <div className="col-10 mx-auto col-lg-2">
+   <div clssName="container">
+      <div className="card-product">      
+       <div className="row my-4 text-capitalize text-center ">
+           <div className="col-10 mx-auto col-lg-2">   
+           <br />
                <img
                 src = {img} 
                 style= {{width:"7rem", height:"7rem"}} 
@@ -16,46 +19,59 @@ export default class CartItem extends Component {
                 data-holder-rendered="true"
                />
            </div>
-    
-           <div className= "col-10 mx-auto col-lg-2 titlestyle">
-              <span className="d-lg-none">Product: </span> 
-              <br />
+          <br />
+          <br />
+           <div className= "col-10 mx-auto col-lg-2 titlestyle">     
+           <p className="text-uppercase font-weight-bold">  
+              Product
+            </p>
               {title}
-              <hr />
+            < hr />
+            <h4>
+            <i class="fas fa-dollar-sign" />
+            <strong>
+               {price}
+            </strong>
+            </h4>   
            </div> 
-           <div className="col-10 mx-auto col-lg-2">
-              <span className="d-lg-none">Price: </span> 
-              <br />
-              ${price}
-           </div>
-           <div classname="col-10 mx-auto col-lg-2 my-2 my-lg-0">
-               <div className="d-flex justify-content-center">
-                   <div>
-                       <br />
-                    <span className="btn btn-black mx-1" onClick={() => decrement(id)} > 
-                    -
-                    </span>
-                    <span className="btn btn-black mx-1"> 
+            <div classname="col-10 mx-auto col-lg-2 my-2 my-lg-0">
+             <br />
+             <br />    
+               <div className="d-flex justify-content-center">       
+                    <button type="button" className="btn btn-pill" onClick={() => decrement(id)} > 
+                    <i className="fa fa-minus" aria-hidden="true" />
+                    </button>
+                    <span className="btn btn-pill"> 
                     {count}
                     </span>
-                    <span className="btn btn-black mx-1" onClick={() => increment(id)} > 
-                    +
-                    </span>
-                </div>
-              </div>
-           </div>
-           <div className="col-10 mx-auto col-lg-2">
+                    <button type="button" className="btn btn-pill" onClick={() => increment(id)} > 
+                    <i className="fa fa-plus" aria-hidden="true" />
+                    </button>        
+               </div>
+            </div>
+           <div className="col-10 mx-auto col-lg-2">  
            <br />
-          
-               <div className="cart-icon" onClick={() =>removeItem(id)}>
+           <br /> 
+               <span className="btn btn-pill" onClick={() =>removeItem(id)}>
                    <i class = "fa fa-trash" />                
-                </div>         
+                </span>
            </div>
-           <div className="col-10 mx-auto col-lg-2">
-            <br />
-              <strong> ${total} (ITEM TOTAL)</strong> 
+           <div className="col-10 mx-auto col-lg-2">    
+           <br />
+           <br /> 
+            <h4>
+              <i class="fas fa-dollar-sign" />
+              <strong>
+              {total}
+              </strong>
+              
+           </h4> (ITEM TOTAL)
             </div> 
        </div>
+        </div>
+        <br />
+      </div>
+      
 
     );
 

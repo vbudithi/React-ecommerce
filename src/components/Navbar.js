@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Link, Switch} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import logo from '../logo.png';
 import { ButtonContainer , Button } from './Button';
 
