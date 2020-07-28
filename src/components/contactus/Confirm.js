@@ -22,17 +22,16 @@ export default class FormUserDetails extends Component {
                 <i className="fa fa-arrow-right" />
                <ul class="list-group mx-auto text-center">
                <br />
-                <a
-                href="#"
+                <button
+                href=""
                  class="list-group-item list-group-item-action text-center" 
                  PrimaryText= "First Name"
                  secondaryText ={firstName}>
                    First Name: 
                    <br />
                    {firstName}
-                </a>       
-                <a 
-                 href="#"
+                </button>       
+                <button
                  class="list-group-item list-group-item-action text-center" 
                  PrimaryText= "Last Name"
                  secondaryText ={lastName}
@@ -40,9 +39,8 @@ export default class FormUserDetails extends Component {
                     Second Name:
                     <br />
                     {lastName}
-                </a>     
-                <a 
-                 href="#"
+                </button>     
+                <button
                  class="list-group-item list-group-item-action text-center" 
                  PrimaryText= "Product"
                  secondaryText ={product}
@@ -50,9 +48,8 @@ export default class FormUserDetails extends Component {
                     Product:   
                     <br />
                     {product}
-                </a>
-                <a
-                 href="#"
+                </button>
+                <button
                  class="list-group-item list-group-item-action text-center" 
                  PrimaryText= "email"
                  secondaryText ={email}
@@ -60,9 +57,8 @@ export default class FormUserDetails extends Component {
                     Email:
                     <br />
                     {email}
-                </a>
-                <a
-                 href="#"
+                </button>
+                <button
                  class="list-group-item list-group-item-action text-center" 
                  PrimaryText= "Phone"
                  secondaryText ={phone}
@@ -70,9 +66,8 @@ export default class FormUserDetails extends Component {
                      Phone:
                      <br />
                      {phone}
-                </a>
-                <a
-                 href="#"
+                </button>
+                <button
                  class="list-group-item list-group-item-action text-center" 
                  PrimaryText= "Feedback"
                  secondaryText ={feedback}
@@ -80,7 +75,7 @@ export default class FormUserDetails extends Component {
                    Feedback:  
                     <br />
                    {feedback}
-                </a>
+                </button>
                </ul>                
                <br />
                <br />
