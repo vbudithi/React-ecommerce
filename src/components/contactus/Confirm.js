@@ -16,12 +16,11 @@ export default class FormUserDetails extends Component {
         return (
             <React.Fragment>
             <div>      
-              <div class="container">
+              <div class="container mx-auto form-group text-center">
                <br />
-               <br />
-               <br />
+               <i className="fa fa-arrow-left" />  &emsp;&emsp;&emsp;
+                <i className="fa fa-arrow-right" />
                <ul class="list-group mx-auto text-center">
-               <i className="fa fa-arrow-left" />
                <br />
                 <a
                 href="#"

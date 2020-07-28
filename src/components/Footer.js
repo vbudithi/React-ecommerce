@@ -12,7 +12,7 @@ const sections = [
     sections: [
       {
         name: "Products",
-        url: "#products"
+        url: "/"
       },
      
     ]
@@ -21,7 +21,7 @@ const sections = [
     sections: [
       {
         name: "About",
-        url: "#about"
+        url: "/about"
       },
     ]
   },
@@ -29,7 +29,7 @@ const sections = [
     sections: [
       {
         name: "Contact",
-        url: "#contact"
+        url: "/contact"
       },
     ]
   }

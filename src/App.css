@@ -8,6 +8,7 @@
    --lightGrey : #E0E0E0;
    --mainBrown: #555251;
    --mainPink:palevioletred;
+   --mainViolet: #e6ecff;
 }
 
 body{
@@ -114,7 +115,7 @@ h2 {
 .features-icons {
 	padding-top: 2rem;
 	padding-bottom: 4rem;
-	background-color: var(--lightGrey);
+	background-color: var(--mainViolet);
   }
   
   .features-icons .features-icons-item {
@@ -138,7 +139,7 @@ h2 {
   }
 
   .fa-handshake{
-	font-size: 3rem;
+  font-size: 3rem;
   }
 
   .fa-share{
@@ -161,6 +162,25 @@ h2 {
   .fa-arrow-left{
     font-size:2rem;
   }
+
+  .fa-smile{
+    font-size:8rem;
+    transition: all 0.1s linear;
+    opacity: 0.7;
+     padding-bottom:50px; 
+    webkit-transition:all .5s ease;
+    moz-transition:all .5s ease;
+    os-transition:all .5s ease;
+    transition:all .5s ease;
+  }
+
+  .fa-smile:hover{
+    transform : scale(1.1);
+    -webkit-transform: scale(1.1,1.1) rotate(360deg) ;
+    -moz-transform: scale(1.1,1.1) rotate(360deg) ;
+    -o-transform: scale(1.1,1.1) rotate(360deg) ;
+    transform: scale(1.1,1.1) rotate(360deg) ;
+   }
 
   .fa-bolt {
      color: var(--mainBlue);

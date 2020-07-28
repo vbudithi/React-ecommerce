@@ -47,17 +47,17 @@ export default class About extends Component {
                         </div>                          
                     </div>                        
                     <section className="features-icons text-center">
-                    <div className="container">
+                      <div className="container">
                         <div className="row">
-                        <div className="col-lg-4">
+                          <div className="col-lg-4">
                             <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-5">
-                            <div className="features-icons-icon d-flex">
+                               <div className="features-icons-icon d-flex">
                                 <i className="icon-screen-desktop m-auto text-primary"></i>
                             </div>
                             <h3>Exclusive offers</h3>
                             <p className="lead">Christmas Sale. hurry up!!!!!!!!</p>
                             <br />
-                                <i className ="fa fa-share" ></i>
+                                <i className ="fa fa-share" />
                             </div>
                         </div>
                         <div className="col-lg-4">
@@ -68,7 +68,7 @@ export default class About extends Component {
                             <h3>24 X 7 Support</h3>                       
                             <p className="lead mb-0">Increased customer support</p>
                             <br />
-                               <i className ="fa fa-user" ></i>
+                               <i className ="fa fa-user" />
                             </div>
                         </div>
                         <div className="col-lg-4">

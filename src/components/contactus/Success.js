@@ -14,14 +14,20 @@ export default class Success extends Component {
     render() {    
         return (
             <React.Fragment>
-                <div class= "text-center">
+              <div className="container">
+                <div class= "text-center mx-auto">
+                    <br />
+                    <br />
                     <h1>
                        Thanks for your submission
                     </h1>
                     <h3>
                      You will receive an email soon. 
-                    </h3>
-                </div>         
+                     </h3>
+                     <br />
+                     <i className="far fa-smile"></i>      
+                  </div>          
+              </div>     
          </React.Fragment>
           
         )
