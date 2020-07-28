@@ -43,7 +43,7 @@ export default class App extends Component {
                     <Footer
                         copyright="shOpnOw, Inc"
                         sections={sections}
-                        socialUrl="https://vivek-shopnow-netlify.com"
+                        socialUrl="https://vivek-shopnow.netlify.app"
                         socials={["facebook", "linkedin", "google", "twitter"]}
                     />
                     </div>
