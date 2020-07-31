@@ -1,10 +1,11 @@
 :root{
    --mainBlue:#2a2a72;
-   --lightBlue:#0099cc;
+   --lightBlue:#e6f2ff;
    --mainWhite: #f3f3f3;
    --mainDark: #232528;
    --mainGrey: #D8D8D8;
    --mainYellow:#ffdf33;
+   --lightYellow:#ffffE0;
    --mainClear: #FFFFFF;
    --lightGrey : #E8E8E8;
    --mainBrown: #555251;
@@ -140,18 +141,16 @@ h2 {
   }
   
   .card-product{
-    background-color :var(--mainClear);
+    background-color : var(--lightBlue);
     padding: 15px 45px 45px 55px
   }
 
 
   .modalCard{
-      background-color: var(--mainYellow);
+      background-color: var(--lightYellow);
       border-radius:0.5rem 0.5rem 0.5rem 0.5rem;
-      color: var(--mainPink)
-      
+      color: var(--mainPink)   
   }
-
   /* font awesome icons */
 
   .fa-user{

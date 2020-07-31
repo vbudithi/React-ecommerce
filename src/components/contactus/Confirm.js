@@ -27,7 +27,6 @@ export default class FormUserDetails extends Component {
                <ul class="list-group mx-auto text-center">
                <br />
                 <button
-                href=""
                  class="list-group-item list-group-item-action text-center" 
                  PrimaryText= "First Name"
                  secondaryText ={firstName}>
@@ -36,7 +35,7 @@ export default class FormUserDetails extends Component {
                    {firstName}
                 </button>       
                 <button
-                 class="list-group-item list-group-item-action text-center" 
+                 className="list-group-item list-group-item-action text-center" 
                  PrimaryText= "Last Name"
                  secondaryText ={lastName}
                 >
@@ -45,7 +44,7 @@ export default class FormUserDetails extends Component {
                     {lastName}
                 </button>     
                 <button
-                 class="list-group-item list-group-item-action text-center" 
+                 className="list-group-item list-group-item-action text-center" 
                  PrimaryText= "Product"
                  secondaryText ={product}
                 >
