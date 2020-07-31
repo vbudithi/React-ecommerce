@@ -1,8 +1,5 @@
 import React, {Component} from "react";
 
-
-import "bootstrap/dist/css/bootstrap.min.css";
-
 import '@front10/landing-page-book/dist/themes/default/index.css';
 
 import Footer from "@front10/landing-page-book/dist/components/Footer";

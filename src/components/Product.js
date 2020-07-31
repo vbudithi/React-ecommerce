@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { ProductConsumer } from '../context';
+import { CartButton } from './Button';
 import PropTypes from 'prop-types';
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -32,10 +33,17 @@ export default class Product extends Component {
                             }}
                             >
                             {inCart ? (
-                                    <p className="text-capitalize mb-0" disabled>{""}
-                                        in Cart
+                            
+                            <div className=" p-0 mb-0">
+                                    <p className="hiii text-capitalize mb-0" disabled>               
+                                       <Link to ='/cart' >
+                                           <CartButton>
+                                               ADDED TO CART
+                                           </CartButton>
+                                        </Link>          
                                     </p>
-                                    ) : (
+                      </div>
+                                    ) : (                           
                                     <i className="fas fa-cart-plus"/>
                                     )}
                             </button>
@@ -100,7 +108,7 @@ const ProductWrapper =  styled.div `
     overflow:hidden;
 }
 .img-container:hover .card-img-top{
-    transform : scale(1.4);
+    transform : scale(1.2);
 }
 
 .cart-btn{

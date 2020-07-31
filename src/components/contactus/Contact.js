@@ -5,9 +5,10 @@ import Footer from '../Footer'
 export default class ContactNew extends Component {
     render() {
         return (
-            <div>          
+            <div>  
+                <Form />          
                 <Map /> 
-                <Form />         
+                       
                 <br />
                 <Footer/>       
             </div>         

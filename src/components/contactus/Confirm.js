@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Aos from "aos";
 
 export default class FormUserDetails extends Component {
     continue = e => {
@@ -13,13 +14,16 @@ export default class FormUserDetails extends Component {
 
     render() {
         const { values : {firstName, lastName, product, phone, email, feedback} } = this.props;
+        Aos.init({duration:1000}); 
         return (
             <React.Fragment>
             <div>      
               <div class="container mx-auto form-group text-center">
                <br />
-               <i className="fa fa-arrow-left" />  &emsp;&emsp;&emsp;
-                <i className="fa fa-arrow-right" />
+                <div data-aos="fade-right" data-aos-once="true">
+                    <i className="fa fa-arrow-left" />  &emsp;&emsp;&emsp;
+                    <i className="fa fa-arrow-right" />
+                </div>
                <ul class="list-group mx-auto text-center">
                <br />
                 <button

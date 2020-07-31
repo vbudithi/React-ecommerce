@@ -1,16 +1,22 @@
 :root{
    --mainBlue:#2a2a72;
+   --lightBlue:#0099cc;
    --mainWhite: #f3f3f3;
    --mainDark: #232528;
    --mainGrey: #D8D8D8;
    --mainYellow:#ffdf33;
    --mainClear: #FFFFFF;
-   --lightGrey : #E0E0E0;
+   --lightGrey : #E8E8E8;
    --mainBrown: #555251;
-   --mainPink:palevioletred;
+   --mainPink:#DB7093;
+   --lightPink: #EDB8C9;
    --mainViolet: #e6ecff;
 }
-
+@media (min-width: 772px) {
+   .navbar-nav{
+     width:50%;
+   }
+}
 body{
   font-family: "Balsamiq+Sans", sans-serif !important;
   background:  var(--mainwhite) !important;
@@ -20,7 +26,6 @@ body{
 .text-title{
    font-family: 'Alike', serif;
    letter-spacing: 0.3rem;
-   text-transform: capitalize;
 }
 .nav-bar{
    font-family: 'Luckiest Guy', cursive;
@@ -134,6 +139,21 @@ h2 {
 	font-size: 5rem;
   }
   
+  .card-product{
+    background-color :var(--mainClear);
+    padding: 15px 45px 45px 55px
+  }
+
+
+  .modalCard{
+      background-color: var(--mainYellow);
+      border-radius:0.5rem 0.5rem 0.5rem 0.5rem;
+      color: var(--mainPink)
+      
+  }
+
+  /* font awesome icons */
+
   .fa-user{
 	font-size: 3rem;
   }
@@ -215,13 +235,18 @@ h2 {
      transition:all .5s ease;
    }
 
-     .fa-wrench:hover{
+   .fa-bars{
+    font-size: 1rem;
+   }
+   
+    .fa-wrench:hover{
       transform : scale(1.1);
       -webkit-transform: scale(1.1,1.1) rotate(360deg) ;
       -moz-transform: scale(1.1,1.1) rotate(360deg) ;
       -o-transform: scale(1.1,1.1) rotate(360deg) ;
       transform: scale(1.1,1.1) rotate(360deg) ;
      }
+
   .btn-black{
      background: transparent;
      text-transform: capitalize;
@@ -259,19 +284,32 @@ h2 {
     overflow:hidden;
   }
 
-    .rounded-circle:hover{
-         transform : scale(1.1);
+.rounded-circle:hover{
+    transform : scale(1.1);
       
-    }
+}
 
-    .titlestyle{
-       font-style: italic;
+.titlestyle{
+    font-style: italic;
 
-    }
+}
 
-  .card-product{
-    background-color : #e6f2ff;
-    padding: 15px 45px 45px 55px
-  }
 
+/*mobile responsive css */
+
+.listStyle{
+  color: var(--mainDark);
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  background-color: var(--lightGrey);
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom:8px;
+  font-weight: bold;
+}
+
+.listStyle:hover {
+   background-color: var(--mainGrey);
+}
 

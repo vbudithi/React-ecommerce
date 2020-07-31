@@ -8,7 +8,6 @@ export default class About extends Component {
         return (
             <React.Fragment>
                  <section className="text-center about">                 
-                    <br />
                      <div className="container">
                        <Title name = "About" title="Us" />
                         <div className="row">

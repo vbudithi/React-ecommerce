@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Aos from "aos";
 
 export default class Success extends Component {
     continue = e => {
@@ -12,6 +13,7 @@ export default class Success extends Component {
     }
 
     render() {    
+        Aos.init({duration:1000}); 
         return (
             <React.Fragment>
               <div className="container">
@@ -25,7 +27,10 @@ export default class Success extends Component {
                      You will receive an email soon. 
                      </h3>
                      <br />
-                     <i className="far fa-smile"></i>      
+                      <div data-aos="fade-up" data-aos-once="true">
+                         <i className="far fa-smile"></i>      
+                     </div>
+                  
                   </div>          
               </div>     
          </React.Fragment>

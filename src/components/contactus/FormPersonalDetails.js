@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default class FormPersonalDetails extends Component {
     continue = e => {
@@ -12,6 +14,7 @@ export default class FormPersonalDetails extends Component {
     }
     render() {
         const { values, handleChange } = this.props;
+        Aos.init({duration:1000}); 
         return (
             <React.Fragment>
             <div>            
@@ -19,9 +22,11 @@ export default class FormPersonalDetails extends Component {
                         <form>
                             <br /><br /><br /> <br /> <br /> 
                          <div className="row">
-                            <div className="col-md-6 mx-auto form-group text-center">     
-                            <i className="fa fa-arrow-left" /> &emsp;&emsp;&emsp;
-                            <i className="fa fa-arrow-right" />
+                            <div className="col-md-6 mx-auto form-group text-center"> 
+                              <div data-aos="fade-right" data-aos-once="true">
+                              <i className="fa fa-arrow-left" /> &emsp;&emsp;&emsp;
+                                <i className="fa fa-arrow-right" />
+                              </div>       
                             <br />
                             <br />
                                 <label for="company">Product (phone brand)</label>

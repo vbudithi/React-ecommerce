@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Title from '../Title';
+import Aos from "aos";
 
 export default class FormUserDetails extends Component {
     continue = e => {
@@ -8,19 +9,21 @@ export default class FormUserDetails extends Component {
     }
     render() {
         const { values, handleChange } = this.props;
+        Aos.init({duration:1000});   
         return (
             <React.Fragment>
             <div>      
               <div className="container ">
                 <form>
                   < br/>
-                  <Title name = "Contact" title="Form" />  
+                  <Title name = "Contact" title="Us" />  
                   <br />
                 
                   <div className="row">
                     <div className="col-md-6 mx-auto form-group text-center">
-                    
-                    <i className="fa fa-arrow-right" />
+                     <div data-aos="fade-right" data-aos-once="true">
+                     <i className="fa fa-arrow-right" />
+                     </div>
                     <br />
                     <br />
                         <label for="first">First Name</label>

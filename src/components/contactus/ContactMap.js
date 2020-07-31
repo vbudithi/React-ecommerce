@@ -48,6 +48,7 @@ class Map extends Component {
 
   render() {
     return (
+      <div className="container">
       <ReactMapGL
         {...this.state.viewport}
         width="100%"
@@ -94,6 +95,7 @@ class Map extends Component {
           />
         </div>
       </ReactMapGL>
+      </div>
     );
   }
 }
